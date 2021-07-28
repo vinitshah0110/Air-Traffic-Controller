@@ -14,12 +14,11 @@ Assumptions: <br>
 • If one aircraft lands, it means remaining aircrafts in queue will lose certain fuel specified by fuel consumption/cost for landing. <br>
 • Once aircraft has landed, then it will go into takeoff queue and wait till interval has elapsed for takeoff. No parking of any sort. Aircrafts from takeoff queue will be emptied with each time unit interval. <br>
 
-
 Requirements:  <br>
 Design an application or distributed application to simulate behavior of ATC. <br>
 Additionally, user should be able to see the current aircraft status on a screen of some sort for monitoring like on Browser, Command Line Tabular data, etc. <br>
- <br>
-When application starts it will be provided with following. <br>
+
+When application starts it will be provided with following.
 1. List of ATCs, their neighboring ATCs separated by distance d, available runways and max landing/takeoff queue limit.
 2. Fuel consumption/cost for landing of an aircraft.
 3. Interval (time units) of takeoff for each aircraft.
