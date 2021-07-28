@@ -1,18 +1,18 @@
-Problem Statement: Air Traffic Controller (ATC) is responsible for safe and orderly flow of air traffic and serves air traffic on First-In, First-Out (FIFO) unless there is emergency. 
-In typical scenario, ATC is mainly responsible for following.
-• Orderly takeoff of aircrafts provided there are some aircrafts waiting in a queue.
-• Clearing Runways for aircrafts for landing which depends on aircraft going to takeoff. If Runway is not clear then it is possible to ask the pilot to go in a queue until cleared for landing.
-• Clear Runways for emergency landing before aircraft runs out of fuel.
-• If runway cannot be cleared for emergency landing then ATC can ask pilot to redirect flight to nearby airport separated by certain distance.
-
-Assumptions:
-• Aircraft will be represented by flight number and remaining fuel. There will be fuel consumption/cost involved for landing. 
-• Aircrafts can go for emergency landing or normal landing.
-• ATC will allow landing on based landing priority (emergency/normal) and remaining fuel.
-• ATC will be represented by ATC_ID, no. of runways, takeoff queue, landing queue and distance of neighboring ATCs.
-• Once aircraft is in ATC vicinity then it is assumed that there is no further distance between ATC an aircraft. Except the fact that fuel consumption is required for landing.
-• If one aircraft lands, it means remaining aircrafts in queue will lose certain fuel specified by fuel consumption/cost for landing.
-• Once aircraft has landed, then it will go into takeoff queue and wait till interval has elapsed for takeoff. No parking of any sort. Aircrafts from takeoff queue will be emptied with each time unit interval.
+Problem Statement: Air Traffic Controller (ATC) is responsible for safe and orderly flow of air traffic and serves air traffic on First-In, First-Out (FIFO) unless there is emergency. <br>
+In typical scenario, ATC is mainly responsible for following. <br>
+• Orderly takeoff of aircrafts provided there are some aircrafts waiting in a queue. <br>
+• Clearing Runways for aircrafts for landing which depends on aircraft going to takeoff. If Runway is not clear then it is possible to ask the pilot to go in a queue until cleared for landing. <br>
+• Clear Runways for emergency landing before aircraft runs out of fuel. <br>
+• If runway cannot be cleared for emergency landing then ATC can ask pilot to redirect flight to nearby airport separated by certain distance. <br>
+ <br>
+Assumptions: <br>
+• Aircraft will be represented by flight number and remaining fuel. There will be fuel consumption/cost involved for landing.  <br>
+• Aircrafts can go for emergency landing or normal landing. <br>
+• ATC will allow landing on based landing priority (emergency/normal) and remaining fuel. <br>
+• ATC will be represented by ATC_ID, no. of runways, takeoff queue, landing queue and distance of neighboring ATCs. <br>
+• Once aircraft is in ATC vicinity then it is assumed that there is no further distance between ATC an aircraft. Except the fact that fuel consumption is required for landing. <br>
+• If one aircraft lands, it means remaining aircrafts in queue will lose certain fuel specified by fuel consumption/cost for landing. <br>
+• Once aircraft has landed, then it will go into takeoff queue and wait till interval has elapsed for takeoff. No parking of any sort. Aircrafts from takeoff queue will be emptied with each time unit interval. <br>
 
 
 Requirements: 
