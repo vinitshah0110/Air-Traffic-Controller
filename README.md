@@ -15,17 +15,17 @@ Assumptions: <br>
 • Once aircraft has landed, then it will go into takeoff queue and wait till interval has elapsed for takeoff. No parking of any sort. Aircrafts from takeoff queue will be emptied with each time unit interval. <br>
 
 
-Requirements: 
-Design an application or distributed application to simulate behavior of ATC.
-Additionally, user should be able to see the current aircraft status on a screen of some sort for monitoring like on Browser, Command Line Tabular data, etc.
-
-When application starts it will be provided with following.
+Requirements:  <br>
+Design an application or distributed application to simulate behavior of ATC. <br>
+Additionally, user should be able to see the current aircraft status on a screen of some sort for monitoring like on Browser, Command Line Tabular data, etc. <br>
+ <br>
+When application starts it will be provided with following. <br>
 1. List of ATCs, their neighboring ATCs separated by distance d, available runways and max landing/takeoff queue limit.
 2. Fuel consumption/cost for landing of an aircraft.
 3. Interval (time units) of takeoff for each aircraft.
 4. Fuel cost per Distance unit in case aircraft needs to travel to another ATC.
-5. Initially, takeoff and landing queue will be empty for ATC.
-Input will be given in the form of JSON.
+5. Initially, takeoff and landing queue will be empty for ATC. <br>
+Input will be given in the form of JSON. <br>
 Aircraft is represented as below <br>
 { <br>
  "flight_number": "a1", <br>
