@@ -1,1 +1,51 @@
-# Air-Traffic-Controller
+Problem Statement: Air Traffic Controller (ATC) is responsible for safe and orderly flow of air traffic and serves air traffic on First-In, First-Out (FIFO) unless there is emergency. 
+In typical scenario, ATC is mainly responsible for following.
+• Orderly takeoff of aircrafts provided there are some aircrafts waiting in a queue.
+• Clearing Runways for aircrafts for landing which depends on aircraft going to takeoff. If Runway is not clear then it is possible to ask the pilot to go in a queue until cleared for landing.
+• Clear Runways for emergency landing before aircraft runs out of fuel.
+• If runway cannot be cleared for emergency landing then ATC can ask pilot to redirect flight to nearby airport separated by certain distance.
+
+Assumptions:
+• Aircraft will be represented by flight number and remaining fuel. There will be fuel consumption/cost involved for landing. 
+• Aircrafts can go for emergency landing or normal landing.
+• ATC will allow landing on based landing priority (emergency/normal) and remaining fuel.
+• ATC will be represented by ATC_ID, no. of runways, takeoff queue, landing queue and distance of neighboring ATCs.
+• Once aircraft is in ATC vicinity then it is assumed that there is no further distance between ATC an aircraft. Except the fact that fuel consumption is required for landing.
+• If one aircraft lands, it means remaining aircrafts in queue will lose certain fuel specified by fuel consumption/cost for landing.
+• Once aircraft has landed, then it will go into takeoff queue and wait till interval has elapsed for takeoff. No parking of any sort. Aircrafts from takeoff queue will be emptied with each time unit interval.
+
+
+Requirements: 
+Design an application or distributed application to simulate behavior of ATC.
+Additionally, user should be able to see the current aircraft status on a screen of some sort for monitoring like on Browser, Command Line Tabular data, etc.
+
+When application starts it will be provided with following.
+1. List of ATCs, their neighboring ATCs separated by distance d, available runways and max landing/takeoff queue limit.
+2. Fuel consumption/cost for landing of an aircraft.
+3. Interval (time units) of takeoff for each aircraft.
+4. Fuel cost per Distance unit in case aircraft needs to travel to another ATC.
+5. Initially, takeoff and landing queue will be empty for ATC.
+Input will be given in the form of JSON.
+Aircraft is represented as below
+{
+ "flight_number": "a1",
+ "fuel": 100
+}
+List of ATCs is represented as
+[{
+ "atc_id": "atc1",
+ "runways": 2,
+ "takeoff_limit": 4,
+ "landing_limit": 4,
+ "takeoff_queue": ["a1", "a2"]
+ "landing_queue": ["a3", "a4"]
+ "neighbor_atc": [{"atc_id": "atc2", "dist": 2}]
+},
+{
+ "atc_id": 2,
+ "runways": 1,
+ "takeoff_limit": 5,
+ "landing_limit": 4,
+ "takeoff_queue": ["a5", "a6"]
+ "landing_queue": ["a7", "a8"]
+ "neighbor_atc": [{"atc_id": "atc1", "dist": 2}]
