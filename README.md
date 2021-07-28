@@ -32,7 +32,8 @@ Aircraft is represented as below <br>
  "fuel": 100 <br>
 } <br>
 List of ATCs is represented as <br>
-[{ <br>
+[ <br>
+{ <br>
  "atc_id": "atc1", <br>
  "runways": 2, <br>
  "takeoff_limit": 4, <br>
