@@ -26,26 +26,26 @@ When application starts it will be provided with following.
 4. Fuel cost per Distance unit in case aircraft needs to travel to another ATC.
 5. Initially, takeoff and landing queue will be empty for ATC.
 Input will be given in the form of JSON.
-Aircraft is represented as below
-{
- "flight_number": "a1",
- "fuel": 100
-}
-List of ATCs is represented as
-[{
- "atc_id": "atc1",
- "runways": 2,
- "takeoff_limit": 4,
- "landing_limit": 4,
- "takeoff_queue": ["a1", "a2"]
- "landing_queue": ["a3", "a4"]
- "neighbor_atc": [{"atc_id": "atc2", "dist": 2}]
-},
-{
- "atc_id": 2,
- "runways": 1,
- "takeoff_limit": 5,
- "landing_limit": 4,
- "takeoff_queue": ["a5", "a6"]
- "landing_queue": ["a7", "a8"]
- "neighbor_atc": [{"atc_id": "atc1", "dist": 2}]
+Aircraft is represented as below <br>
+{ <br>
+ "flight_number": "a1", <br>
+ "fuel": 100 <br>
+} <br>
+List of ATCs is represented as <br>
+[{ <br>
+ "atc_id": "atc1", <br>
+ "runways": 2, <br>
+ "takeoff_limit": 4, <br>
+ "landing_limit": 4, <br>
+ "takeoff_queue": ["a1", "a2"] <br>
+ "landing_queue": ["a3", "a4"] <br>
+ "neighbor_atc": [{"atc_id": "atc2", "dist": 2}] <br>
+}, <br>
+{ <br>
+ "atc_id": 2, <br>
+ "runways": 1, <br>
+ "takeoff_limit": 5, <br>
+ "landing_limit": 4, <br>
+ "takeoff_queue": ["a5", "a6"] <br>
+ "landing_queue": ["a7", "a8"] <br>
+ "neighbor_atc": [{"atc_id": "atc1", "dist": 2}] <br>
