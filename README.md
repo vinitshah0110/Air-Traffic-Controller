@@ -48,4 +48,5 @@ List of ATCs is represented as <br>
  "landing_limit": 4, <br>
  "takeoff_queue": ["a5", "a6"] <br>
  "landing_queue": ["a7", "a8"] <br>
- "neighbor_atc": [{"atc_id": "atc1", "dist": 2}] <br>
+ "neighbor_atc": [{"atc_id": "atc1", "dist": 2} <br>
+]
